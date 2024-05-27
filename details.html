@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=286, width=640, user-scalable=no" />
+    <title>作品详情页</title>
+    <link href="css/css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            /* ie8 */
+            -ms-interpolation-mode: bicubic;
+            /*为了照顾ie图片缩放失真*/
+        }
+
+        .service {
+            position: fixed;
+            right: 10px;
+            top: 150px;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+            align-items: center;
+        }
+
+
+
+        .tel div {
+            width: 50px;
+            height: 50px;
+            background-color: #353535;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #qq {
+            display: none;
+            width: 200px;
+            height: 110px;
+            border: solid 1px #353535;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #wx {
+            display: none;
+            width: 200px;
+            height: 110px;
+            border: solid 1px #353535;
+            background-color: #fff;
+            text-align: center;
+            line-height: 90px;
+        }
+    </style>
+    <div class="service">
+        <div id="qq">
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2954471664&site=qq&menu=yes" target="_blank">
+                <img src="images/other/qq轻聊.png" alt="">
+                <h2>咨询在线客服</h2>
+            </a>
+        </div>
+        <div id="wx">
+            <h2>微信号:wlz222311</h2>
+        </div>
+        <div class="tel">
+            <div class="qq">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=2954471664&site=qq&menu=yes" target="_blank">
+                    <img src="images/other/QQ.png" alt="">
+
+                </a>
+            </div>
+            <div class="wx">
+                <img src="images/other/微信.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="show_menu mg2 cen xi24 mxi28 bai">
+        <ul>
+            <li><b>网页截图展示：</b></li>
+            <li>Dreamweaver制作，HBuilder等任何编辑器都通用</li>
+        </ul>
+    </div>
+    <div class="show_menu2 mg2 cen hong xi16">为了保证图片流畅加载，展示的网页截屏均压缩到85%，实际网页比展示大15%</div>
+    <div class="show_pic mg">
+        <ul>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+            <li><img id="img" align="absmiddle" src="" alt="没有更多了哦" /></li>
+        </ul>
+    </div>
+    <script>
+        window.onload = function () {
+            let para = location.search.substr(1).split('=')
+            let paraArr = []
+            for (var i = 1; i < para.length; i++) {
+                var arrchild = para[i].split('&')
+                paraArr.push(arrchild[0])
+            }
+
+
+
+            let name = paraArr[0]
+            let id = paraArr[1]
+            let nodes = document.querySelectorAll('#img')
+            nodes.forEach((item, index) => {
+                if (index == 0) {
+                    item.src = `images/${name}/${id}/s1.jpg`
+                } else {
+                    item.src = `images/${name}/${id}/a${index}.jpg`
+                }
+            })
+        }
+
+
+
+        document.querySelector('.qq').onmouseover = function () {
+            document.querySelector('.qq').style.background = 'red'
+            document.querySelector('#qq').style.display = 'block'
+        }
+
+        document.querySelector('.qq').onmouseout = function () {
+            document.querySelector('.qq').style.background = '#353535'
+            document.querySelector('#qq').style.display = 'none'
+
+        }
+
+        document.querySelector('.wx').onmouseover = function () {
+            document.querySelector('.wx').style.background = 'red'
+            document.querySelector('#wx').style.display = 'block'
+        }
+
+        document.querySelector('.wx').onmouseout = function () {
+            document.querySelector('.wx').style.background = '#353535'
+            document.querySelector('#wx').style.display = 'none'
+        }
+
+
+
+
+        document.querySelector('#qq').onmouseover = function () {
+            document.querySelector('.qq').style.background = 'red'
+            document.querySelector('#qq').style.display = 'block'
+        }
+
+        document.querySelector('#qq').onmouseout = function () {
+            document.querySelector('.qq').style.background = '#353535'
+            document.querySelector('#qq').style.display = 'none'
+
+        }
+
+        document.querySelector('#wx').onmouseover = function () {
+            document.querySelector('.wx').style.background = 'red'
+            document.querySelector('#wx').style.display = 'block'
+        }
+
+        document.querySelector('#wx').onmouseout = function () {
+            document.querySelector('.wx').style.background = '#353535'
+            document.querySelector('#wx').style.display = 'none'
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/*鍏敤瀹氫箟*/
+@charset "utf-8";
+*{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}/*鍙栨秷閾炬帴鐐瑰嚮鐨勬椂鍊欏彉钃�*/
+*:focus{outline:none;}
+body a,.tm{
+-webkit-transition: all .2s linear;
+transition: all .2s linear;
+cursor:pointer;
+}
+input,select,textarea{ line-height:normal;-webkit-appearance:none;}
+ul,li,tr,td,dl,dt,dd{list-style-type:none;margin:0px;padding:0px;}
+li{ overflow:hidden;}
+/* 鍥剧墖鑷€傚簲 */
+a img{text-decoration: none;margin: 0px;padding: 0px;border:none;}
+.f{ float:left; overflow:hidden;}
+.r{ float:right; overflow:hidden;}
+a{	text-decoration:none; color:#2b2b2b;}
+a:hover{ text-decoration:none; color:#666;}
+.huang,.huang a{ color:red;}
+.hong,.hong a{ color:#ff0000;}
+.lan,.lan a{ color:#2293d1;}
+.lv,.lv a{ color:#2293d1;}
+.hui,.hui a{color:#6f6f6f;}
+.hui a:hover{color:#fff;}
+.hui2,.hui2 a{color:#4b4a4a;}
+.bai,.bai a{ color:#FFFFFF;}
+.cu{font-weight:bold;}
+.xi{ font-weight:lighter;}
+.mg2{ margin-left:auto; margin-right:auto; overflow:hidden;}
+.cen{ text-align:center;}
+.xi12{ font-size:12px;}
+.xi13{ font-size:13px;}
+.xi14{ font-size:14px;}
+.xi15{ font-size:15px;}
+.xi16{ font-size:16px;}
+.xi17{ font-size:17px;}
+.xi18{ font-size:18px;}
+.xi19{ font-size:19px;}
+.xi20{ font-size:20px;}
+.xi21{ font-size:21px;}
+.xi22{ font-size:22px;}
+.xi23{ font-size:23px;}
+.xi24{ font-size:24px;}
+.xi25{ font-size:25px;}
+.xi26{ font-size:26px;}
+.xi27{ font-size:27px;}
+.xi28{ font-size:28px;}
+.xi29{ font-size:29px;}
+.xi30{ font-size:30px;}
+.xi31{ font-size:31px;}
+.xi32{ font-size:32px;}
+.xi33{ font-size:33px;}
+.xi34{ font-size:34px;}
+.xi35{ font-size:35px;}
+.xi36{ font-size:36px;}
+.xi37{ font-size:37px;}
+.xi38{ font-size:38px;}
+.xi39{ font-size:39px;}
+.xi40{ font-size:40px;}
+.tm:hover{opacity:0.85; filter:alpha(opacity=85);}
+.xiahuaxian{ text-decoration:underline;}
+.shanchuxian{ text-decoration:line-through;}
+.cur{ cursor:pointer;}
+.mengban{ display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999990;}
+/*椤甸潰*/
+/*pc绔�*/
+@media (min-width:641px){
+html{ overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+body{ margin:0px; font-size:12px; background:#ffffff; color:#2b2b2b;}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+input,select,textarea,div{FONT-FAMILY:'Microsoft YaHei';}
+.mg{ margin-left:auto; margin-right:auto; overflow:hidden; width:1200px;}
+.index_list1{ padding:0 6px 44px 6px; width:1216px;}
+.index_list1 li{ float:left; width:288px; height:400px; background:#fafafa; margin:8px; position:relative;
+-webkit-transition: all .2s linear;
+transition: all .2s linear;}
+.index_list1 li:hover{-webkit-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+z-index:2;
+transform: translate3d(0, -2px, 0);
+-webkit-transform: translate3d(0, -2px, 0);}
+.index_list1c{ line-height:23px; padding:19px 15px 0 15px; height:32px;}
+.index_list1c a{ display:block;}
+.index_list1x{ padding:0 15px; line-height:28px;}
+.index_title{ line-height:120px;}
+.foot{ height:44px; line-height:14px;}
+.dh li{ width:100px; height:40px; line-height:40px; float:left; margin:0 15px 15px 0;}
+.dh li a{ display:block; background:red; color:#fff;}
+.dh li a:hover,.dh li a.hover{ color:#fff; background:blue url(../images/dui.png) right bottom no-repeat;}
+.show_menu{ background:red;}
+.show_menu li{display: inline-block; line-height:80px; padding:0 20px;}
+.show_pic li img{ width:100%; margin-bottom:20px;}
+.show_pic{ margin-bottom:10px;}
+.show_menu2{ background:#d9d9d9; margin-bottom:30px; line-height:36px;}
+.index_list1_position{ position:absolute; right:15px; bottom:50px; line-height:40px;}
+}
+/*鎵嬫満绔�*/
+@media (max-width:641px){
+body{ margin:0px; background:#fff; color:#2b2b2b; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; overflow-x:hidden; font-size:12px;}
+input,select,textarea,div{FONT-FAMILY:'Microsoft YaHei';}
+.mg{ margin-left:auto; margin-right:auto; overflow:hidden; width:600px;}
+.mgz{ margin-left:auto; margin-right:auto; overflow:hidden; width:640px;}
+.mxi12{ font-size:12px;}
+.mxi13{ font-size:13px;}
+.mxi14{ font-size:14px;}
+.mxi15{ font-size:15px;}
+.mxi16{ font-size:16px;}
+.mxi17{ font-size:17px;}
+.mxi18{ font-size:18px;}
+.mxi19{ font-size:19px;}
+.mxi20{ font-size:20px;}
+.mxi21{ font-size:21px;}
+.mxi22{ font-size:22px;}
+.mxi23{ font-size:23px;}
+.mxi24{ font-size:24px;}
+.mxi25{ font-size:25px;}
+.mxi26{ font-size:26px;}
+.mxi27{ font-size:27px;}
+.mxi28{ font-size:28px;}
+.mxi29{ font-size:29px;}
+.mxi30{ font-size:30px;}
+.mxi31{ font-size:31px;}
+.mxi32{ font-size:32px;}
+.mxi33{ font-size:33px;}
+.mxi34{ font-size:34px;}
+.mxi35{ font-size:35px;}
+.mxi36{ font-size:36px;}
+.mxi37{ font-size:37px;}
+.mxi38{ font-size:38px;}
+.mxi39{ font-size:39px;}
+.mxi40{ font-size:40px;}
+.mxi46{ font-size:46px;}
+.mxi50{ font-size:50px;}
+.mxi52{ font-size:52px;}
+.mxi59{ font-size:59px;}
+.mxi60{ font-size:60px;}
+.index_list1{ padding:0 0 44px 0; width:640px;}
+.index_list1 li{ float:left; width:288px; height:400px; background:#fafafa; position:relative; margin:8px 0 8px 21.3px;
+-webkit-transition: all .2s linear;
+transition: all .2s linear;}
+.index_list1 li:hover{-webkit-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+z-index:2;
+transform: translate3d(0, -2px, 0);
+-webkit-transform: translate3d(0, -2px, 0);}
+.index_list1c{ line-height:23px; padding:22px 15px 0 15px; height:35px;}
+.index_list1c a{ display:block;}
+.index_list1x{ padding:0 15px; line-height:28px; height:28px;}
+.index_title{ line-height:120px;}
+.foot{ height:54px; line-height:20px; font-size:18px;}
+.dh li{ width:141px; height:60px; line-height:60px; float:left; margin:0 0 15px 15px;}
+.dh li a{ display:block; background:red; color:#fff;}
+.dh li a:hover,.dh li a.hover{ color:#fff; background:blue url(../images/dui.png) right bottom no-repeat;}
+.show_menu{ background:red; padding:10px 0; margin-bottom:30px;}
+.show_menu li{display: inline-block; line-height:60px; padding:0 20px;}
+.show_pic li img{ width:100%; margin-bottom:20px;}
+.show_pic{ margin-bottom:10px;}
+.show_menu2{ display:none;}
+.index_list1_position{ position:absolute; right:15px; bottom:46px; line-height:40px;}
+
+}
+/*pc绔�*/
+@media (min-width:641px){
+.zzzzzzzzz{ display:none;}
+}
+/*鎵嬫満绔�*/
+@media (max-width:641px){
+.zzzzzzzz{ display:none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
